@@ -39,8 +39,6 @@ class State extends GlobalSimulation{
 	}
 	
 	private void ready(){
-		int i = 0;
-		i++;
 		numberInQueue--;
 		if (numberInQueue > 0)
 			insertEvent(READY, time + 2*slump.nextDouble());
